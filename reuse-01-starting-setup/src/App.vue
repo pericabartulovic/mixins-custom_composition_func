@@ -24,6 +24,7 @@ export default {
 
 html {
   font-family: sans-serif;
+  background-color: #272b2c;
 }
 
 body {
