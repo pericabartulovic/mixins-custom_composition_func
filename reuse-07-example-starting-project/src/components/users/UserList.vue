@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue';
+import { ref, computed, toRefs } from 'vue';
 
 import UserItem from './UserItem.vue';
 import useSearch from '../../hooks/search.js'
@@ -31,8 +31,10 @@ export default {
   props: ['users'],
   emits: ['list-projects'],
   setup(props) {
+    
+    const {users} = toRefs(props);
         
-    const {enteredSearchTerm, availableItems, updateSearch} = useSearch(props.users, 'fullName');
+    const {enteredSearchTerm, availableItems, updateSearch} = useSearch(users, 'fullName');
 
     const sorting = ref(null);
     const displayedUsers = computed(function () {
