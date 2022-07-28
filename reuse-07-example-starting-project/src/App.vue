@@ -37,6 +37,7 @@ export default {
 }
 html {
   font-family: sans-serif;
+  background-color: #272b2c;
 }
 body {
   margin: 0;
@@ -49,16 +50,16 @@ main {
 
 button {
   font: inherit;
-  border: 1px solid #00006b;
+  border: 1px solid #0a0a2e;
   background-color: transparent;
-  color: #00006b;
+  color: #0a0a2e;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   margin: 0.5rem 0.5rem 0.5rem 0;
 }
 button:hover,
 button:active {
-  background-color: #efefff;
+  background-color: #3e3e44;
 }
 
 button.selected {
